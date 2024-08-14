@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+body {
+  background-color: #fff7e5;
+  font-family: "Rubik";
+  padding: 0px 80px 80px 80px;
+  overflow-x: hidden;
+}
+.typewriter {
+  position: relative;
+  font-weight: bold;
+  color: #ffc107;
+  font-family: "Anonymous Pro", monospace;
+  letter-spacing: 7px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter 3s steps(23) 1s alternate infinite;
+  -webkit-font-smoothing: antialiased;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes typewriter {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
   to {
-    transform: rotate(360deg);
+    width: 100%;
   }
+}
+.myButton {
+  border: none;
+  background-color: #fff7e5;
+  font-family: Rubik;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.myButton:hover {
+  background-color: #ffc107;
+  border-radius: 10px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.box {
+  background-color: white;
+  border: 1px dashed #ffc107;
+  text-align: center;
+  /* width: 70px; */
+  height: 90px;
+  margin: 30px;
+}
+
+.boxTitle {
+  margin: 0;
+  font-size: 40px;
+}
+
+.boxDescription {
+  margin: 0;
+  color: #888;
+}
+.skill-custom {
+  font-weight: 500;
+  color: #fff;
+  background-color: #ffc107 !important;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 40px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.percent {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 50%;
+  background: #ffc107;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
 }
